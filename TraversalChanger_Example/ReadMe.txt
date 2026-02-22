@@ -1,0 +1,1 @@
+This mod is an example for my Traversal Changer mod
