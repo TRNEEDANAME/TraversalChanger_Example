@@ -8,9 +8,13 @@
     <AssemblyName>TraversalChanger_Example</AssemblyName>
     <RootNamespace>TraversalChanger_Example</RootNamespace>
   </PropertyGroup>
+  <PropertyGroup>
+    <SolutionRoot>$(MSBuildProjectDirectory)\..\</SolutionRoot>
+    <ScriptsDir>$(SolutionRoot).scripts\\</ScriptsDir>
+    <BuildCommonRoot>$(ScriptsDir)X2ModBuildCommon\</BuildCommonRoot>
+  </PropertyGroup>
+  <Import Project="$(BuildCommonRoot)XCOM2.targets" />
   <ItemGroup>
-    
-    
     <Folder Include="Config\" />
     <Folder Include="Config\Base\" />
     <Folder Include="Localization\" />
@@ -19,21 +23,6 @@
     <Folder Include="ContentForCook\" />
     <Folder Include="Src\TraversalChanger_Example\" />
     <Folder Include="Src\TraversalChanger_Example\Classes\" />
-  </ItemGroup>
-  <ItemGroup>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <Content Include="ReadMe.txt" />
     <Content Include="ModPreview.jpg" />
     <Content Include="ContentOptions.json" />
@@ -48,11 +37,8 @@
     <Content Include="Src\TraversalChanger_Example\Classes\X2DLCInfo_TraversalChanger_Example.uc" />
     <Content Include="Src\TraversalChanger_Example\Classes\Help.uc" />
     <Content Include="Src\TraversalChanger_Example\Classes\ConfigEngine.uc" />
+    <Content Include="PublishedFileId.ID" />
+    <Content Include="Config\XComTraversalChanger_Ability.ini" />
+    <Content Include="Config\XComTraversalChanger_Adding.ini" />
   </ItemGroup>
-  <PropertyGroup>
-    <SolutionRoot>$(MSBuildProjectDirectory)\..\</SolutionRoot>
-    <ScriptsDir>$(SolutionRoot).scripts\\</ScriptsDir>
-    <BuildCommonRoot>$(ScriptsDir)X2ModBuildCommon\</BuildCommonRoot>
-  </PropertyGroup>
-  <Import Project="$(BuildCommonRoot)XCOM2.targets" />
 </Project>
